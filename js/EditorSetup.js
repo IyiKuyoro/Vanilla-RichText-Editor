@@ -26,7 +26,7 @@ class CustomImageUploadAdapter {
               const response = JSON.parse(this.xhr.responseText);
 
               let images = {
-                default: response.secure_url,
+                default: response.image_url,
               };
 
               resolve(images);
